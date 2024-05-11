@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "customjukebox",
+  "version": "${version}",
+  "name": "CustomJukebox",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/tsmk-union/customjukebox"
+  },
+  "license": "Apache-2.0",
+  "icon": "assets/customjukebox/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "world.tsmk.customjukebox.client.CustomJukeboxClient"
+    ],
+    "main": [
+      "world.tsmk.customjukebox.CustomJukebox"
+    ]
+  },
+  "mixins": [
+    "customjukebox.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
