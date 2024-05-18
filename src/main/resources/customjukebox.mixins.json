@@ -4,8 +4,13 @@
   "package": "world.tsmk.customjukebox.mixins",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "MixinAtSoundLoader",
+    "MixinAtSoundSystem"
   ],
   "client": [
+    "MixinAtSoundLoader",
+    "MixinAtSoundSystem",
+    "MixinsAtSoundManager"
   ],
   "injectors": {
     "defaultRequire": 1

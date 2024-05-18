@@ -11,6 +11,10 @@ base {
 }
 
 repositories {
+    maven {
+        url "https://maven2.bai.lol"
+
+    }
     // Add repositories to retrieve artifacts from in here.
     // You should only use this when depending on other mods because
     // Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
@@ -26,6 +30,10 @@ dependencies {
 
     // Fabric API. This is technically optional, but you probably want it anyway.
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+    modImplementation "lol.bai:badpackets:fabric-${badpackets_version}"
+    implementation "org.bouncycastle:bcprov-jdk18on:1.78.1"
+    implementation "ws.schild:jave-all-deps:3.5.0"
+
 }
 
 processResources {
@@ -66,7 +74,7 @@ java {
 
 jar {
     from("LICENSE") {
-        rename { "${it}_${project.archivesBaseName}"}
+        rename { "${it}_${project.archivesBaseName}" }
     }
 }
 

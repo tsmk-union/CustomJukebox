@@ -1,0 +1,10 @@
+{
+  "music_disc_netmusic": {
+    "sounds": [
+      {
+        "name": "customjukebox:music_disc_netmusic",
+        "stream": true
+      }
+    ]
+  }
+}
